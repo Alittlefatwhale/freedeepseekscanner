@@ -1,0 +1,2 @@
+# freedeepseekscanner
+扫描公网暴露的Deepseek模型服务

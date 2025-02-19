@@ -11,7 +11,7 @@ def check_ollama_service(url):
         if "Ollama is running" in response.text:
             print(f"Ollama服务正在运行: {url}")
 
-            # 拼接/api/tags并访问
+            # 拼接/api/tags并访问，检测是否存在模型
             api_url = f"{url.rstrip('/')}/api/tags"
             api_response = requests.get(api_url)
 
